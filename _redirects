@@ -1,0 +1,98 @@
+# Kymera Group — Netlify redirects
+# Apex -> www is handled by Netlify domain settings (primary domain = www.kymeragroup.it).
+# Do NOT add a forced apex rule here: combined with a cached old www->apex redirect it caused a redirect loop.
+
+# Vacuum dryer: correct spelling as the public URL, file stays vaccumdryer.html
+/vaccumdryer  /vacuum-dryer  301!
+/vaccumdryer.html  /vacuum-dryer  301!
+/vacuum-dryer  /vaccumdryer.html  200
+
+# Old Wix URLs -> new pages
+/home  /  301
+/calati-calibri  /calati-thickness-gauges  301
+/spareparts  /consumables  301
+/spare-parts  /consumables  301
+/category/machine  /machines-available  301
+/category/*  /machines-available  301
+/virtualtannery  /innovative  301
+/innovative-solutions  /innovative  301
+/contact-us  /contact  301
+/sell-your-machine  /sell  301
+/lab-machine  /labequipment  301
+/vacuumdryer  /vacuum-dryer  301
+/toggling  /tannery-toggle-clips  301
+/shop  /machines-available  301
+
+# Old Wix URLs still requested (404 in Netlify logs, Nov 2026)
+/bandknives  /band-knives-leather-splitting  301
+/machines  /machines-available  301
+/Machines  /machines-available  301
+/moisturemeter  /moisture-meter  301
+/splittingmachine  /spare-parts-splitting-machine  301
+/measuringequipment  /measuring  301
+/lab%20machine  /labequipment  301
+/lab%20drums  /lab-drums  301
+/provataglierine  /pneumatic-hand-shears  301
+/dr-kym  /  301
+/product-page/splitting-machine-mosconi-super-zenit-3000-lime  /machine-splitting-machine-mosconi-super-zenit-3000-lime  301
+/product-page/dascomar-applicart-1800-2  /machine-dascomar-applicart-1800-2  301
+/product-page/buffing-machine-for-flesh-side  /machine-buffing-machine-for-flesh-side  301
+/product-page/aletti-buffing-machine-800  /machine-aletti-buffing-machine-800  301
+/product-page/wheel-buffing-machine  /machine-wheel-buffing-machine  301
+/product-page/wb-press-bauce-bluestar-2400  /machine-wb-press-bauce-bluestar-2400  301
+/product-page/splitting-machine-mercier-xms-3000-for-lime-splitting  /machine-splitting-machine-mercier-xms-3000-for-lime-splitting  301
+/product-page/buffing-machine-bergi-sup-1800mm  /machine-buffing-machine-bergi-sup-1800mm  301
+/product-page/spray-line-carlessi-1800mm  /machine-spray-line-carlessi-1800mm  301
+/product-page/applicart-1800-das-comar  /machine-applicart-1800-das-comar  301
+/product-page/staking-machine-baggio-new-evolution-3-3200mm  /machine-staking-machine-baggio-new-evolution-3-3200mm  301
+/product-page/measuring-machine-wega-ciak-1600mm  /machine-measuring-machine-wega-ciak-1600mm  301
+/product-page/shaving-machine-rizzi-lw7-3300  /machine-shaving-machine-rizzi-lw7-3300  301
+/product-page/shaving-machine-r-3200-poletto  /machine-shaving-machine-r-3200-poletto  301
+/product-page/fustellatrice-atom-g-999-st-t25  /machine-fustellatrice-atom-g-999-st-t25  301
+/product-page/splitting-machine-mosconi-sirio-1800mm  /machine-splitting-machine-mosconi-sirio-1800mm  301
+/product-page/drying-tunnel-barnini-tv-1800-8mt  /machine-drying-tunnel-barnini-tv-1800-8mt  301
+/product-page/rotary-staking-machine-flamar-sr-160l  /machine-rotary-staking-machine-flamar-sr-160l  301
+/product-page/rotary-staking-machine-lo-stampo-bf-152-1600mm  /machine-rotary-staking-machine-lo-stampo-bf-152-1600mm  301
+/product-page/spreader-for-roller-coater-1800mm  /machine-spreader-for-roller-coater-1800mm  301
+/product-page/toggling-f-lli-carlessi-egx-106-3000x1600  /machine-toggling-f-lli-carlessi-egx-106-3000x1600  301
+/product-page/polishing-machine-fr-600  /machine-polishing-machine-fr-600  301
+/product-page/nerapro  /pneumatic-hand-shears  301
+/product-page/fp862m  /pneumatic-hand-shears  301
+/product-page/fp862mt  /pneumatic-hand-shears  301
+/product-page/r1-for-finished-leather-textile  /pneumatic-hand-shears  301
+/product-page/fp-503-for-crust-finished-leather  /pneumatic-hand-shears  301
+/product-page/fp-862-for-lime-wet-blue  /pneumatic-hand-shears  301
+/product-page/*  /machines-available  301
+/blog/color-control-manufacturing-lighting  /blog-color-control-lighting  301
+/blog/eudr-exit-tanneries  /blog-eudr-exit-tanneries  301
+/blog/italian-leather-machinery-filtered  /blog-italian-leather-machinery  301
+/blog/lwg-certification-tannery  /blog-lwg-certification  301
+/blog/us-tariffs-hide-market  /blog-us-tariffs-hide-market  301
+/blog/machine-reconditioning-poletto-s3200  /blog-machine-reconditioning-poletto-s3200  301
+/post/*  /blog  301
+/blog/*  /blog  301
+
+# Previous file names of this site
+/Pneumatic%20Hand%20Shears.html  /pneumatic-hand-shears  301
+/The%20Balloon.html  /the-balloon  301
+/BandKnives.html  /band-knives-leather-splitting  301
+/Calati.html  /calati-thickness-gauges  301
+/Blog%20-%20Color%20Control.html  /blog-color-control-lighting  301
+/Innovative%20Solutions.html  /innovative  301
+/Blog%20-%20LWG%20Certification.html  /blog-lwg-certification  301
+/Machines%20Available.html  /machines-available  301
+/Blog%20-%20EUDR%20Exit.html  /blog-eudr-exit-tanneries  301
+/WringerMachine.html  /wringer  301
+/Blog%20-%20US%20Tariffs.html  /blog-us-tariffs-hide-market  301
+/SoftnessTesterST300.html  /softness-tester-st300  301
+/SplittingMachine.html  /spare-parts-splitting-machine  301
+/VacuumDryer.html  /vacuum-dryer  301
+/Blog%20-%20Machine%20Reconditioning.html  /blog-machine-reconditioning-poletto-s3200  301
+/Sell%20Your%20Machine.html  /sell  301
+/LeatherDecoration.html  /leather-decoration  301
+/Lab%20Drums.html  /lab-drums  301
+/Lab%20Machine.html  /labequipment  301
+/MoistureMeter.html  /moisture-meter  301
+/Blog%20-%20Italian%20Machinery.html  /blog-italian-leather-machinery  301
+/Toggling.html  /tannery-toggle-clips  301
+/MeasuringEquipment.html  /measuring  301
